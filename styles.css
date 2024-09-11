@@ -204,38 +204,51 @@ header{
     display: flex;
 }
 .interests-section {
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    background-color: #f4f4f9;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
     margin: 20px 0;
 }
 
-.interests-section h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-    color: #333;
+.interests-header {
+    margin-bottom: 20px;
+    text-align: center;
 }
 
-.interests-section p {
+.interests-header h2 {
+    font-size: 28px;
+    color: #333;
+    margin: 0;
+}
+
+.interests-header p {
     font-size: 18px;
-    margin-bottom: 15px;
     color: #666;
 }
 
-.interests-list {
-    list-style-type: none;
-    padding: 0;
+.interests-content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
-.interests-list li {
-    font-size: 16px;
-    margin: 10px 0;
-    color: #444;
+.interest-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.interests-list li strong {
+.interest-item h3 {
+    font-size: 20px;
     color: #007bff;
+    margin-top: 0;
+}
+
+.interest-item p {
+    font-size: 16px;
+    color: #444;
 }
 
 .services-container{
