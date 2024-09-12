@@ -439,6 +439,82 @@ header{
 .copyright_section a{
     color: gold;
 }
+
+.footer {
+    background-color: rgba(17, 17, 17, 0.8); 
+    color: white;
+    position: relative;
+    padding: 50px 0;
+    text-align: center;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
+  }
+  
+  /* Footer container */
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* Subscribe Section */
+  .subscribe-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  .email-input {
+    padding: 15px;
+    border-radius: 50px;
+    border: none;
+    width: 300px;
+    outline: none;
+    margin-right: 15px;
+  }
+  
+  .subscribe-btn a{
+    padding: 15px 25px;
+    background-color: #4a4ed1;
+    color: white;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  /* Contact Info */
+  .contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .contact-item img {
+    width: 20px;
+  }
+  
+  /* Social icons */
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .social-link {
+    color: white;
+    font-size: 24px;
+  }
+  
+  .social-link:hover {
+    color: #4a4ed1;
+  }
 @media (max-width: 768px) {
 .header-content{
     top: 0;

@@ -250,31 +250,33 @@
             </div>
         </div>                        
     </section>
-    <section class="id">
-        <div class="footer_section ">
-            <div class="footer-container">
-               <div class="input_btn_main">
-                  <input type="text" class="mail_text" placeholder="Enter your email" name="Enter your email">
-                  <div class="subscribe_bt"><a href="#">Subscribe</a></div>
-               </div>
-               <div class="location_main">
-                  <div class="call_text"><img src="images/call-icon.png"></div>
-                  <div class="call_text"><a href="#">Call +01 1234567890</a></div>
-                  <div class="call_text"><img src="images/mail-icon.png"></div>
-                  <div class="call_text"><a href="#">demo@gmail.com</a></div>
-               </div>
-               <div class="social_icon">
-                <div class="social-icons pt-3">
-                    <li class="social-item"><a class="social-link text-light" href="#"><i class="fa-brands fa-facebook"></i></a></li>
-                    <li class="social-item"><a class="social-link text-light" href="https://x.com/Alex125maina1"><i class="fa-brands fa-x-twitter"></i></a></li>
-                    <li class="social-item"><a class="social-link text-light" href="https://www.instagram.com/muturi01_alex/"><i class="fa-brands fa-instagram"></i></a></li>
-                    <li class="social-item"><a class="social-link text-light" href="https://github.com/Alex203maina"><i class="fa-brands fa-github"></i></a></li>
-                    
-                </div>
-               </div>
+    <footer class="footer">
+        <div class="footer-container">
+          <div class="subscribe-section">
+            <input type="text" class="email-input" placeholder="Enter your email">
+            <div class="subscribe-btn">
+                <a href="mailto:demo@gmail.com">Subsicribe</a>
             </div>
-         </div>
-         <!-- footer section end -->
+          </div>
+          <div class="contact-info">
+            <div class="contact-item">
+                <i class="fa-solid fa-phone"></i>
+              <span>Call + (254) 798-630-435</span>
+            </div>
+            <div class="contact-item">
+                <i class="fa-regular fa-envelope"></i>
+              <span>alex203maina@gmail.com</span>
+            </div>
+          </div>
+          <div class="social-icons">
+            <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" class="social-link"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social-link"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        </div>
+      </footer>
+           <!-- footer section end -->
          <!-- copyright section start -->
          <div class="copyright_section">
             <div class="copyright-container">
@@ -297,11 +299,11 @@ function scrollFunction() {
   const element = document.getElementById("navbar");
 
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    element.style.top = "0"; // Modify the style directly
-    element.classList.add("scrolled"); // Optionally add a class
+    element.style.top = "0"; 
+    element.classList.add("scrolled"); 
   } else {
-    element.style.top = "-50px"; // Reset the style
-    element.classList.remove("scrolled"); // Optionally remove a class
+    element.style.top = "-50px"; 
+    element.classList.remove("scrolled");
   }
 }
 
