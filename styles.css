@@ -298,7 +298,7 @@ header{
 
 .item-service-title h2 {
     margin: 0;
-    font-size: 24px;
+    font-size: 20px;
 }
 
 .item-service-title a {
@@ -316,7 +316,7 @@ header{
 
 .item-service-desc p {
     margin: 5px 0;
-    font-size: 20px;
+    font-size: 15px;
     color: #969696;
     line-height: 30px;
     font-family: sans-serif;
