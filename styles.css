@@ -432,6 +432,8 @@ header{
 .copyright_section{
     background-color: rgb(77, 77, 77);
     padding: 15px;
+    align-items: center;
+    text-align: center;
     color: white;
 }
 .copyright_section a{
