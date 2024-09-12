@@ -8,6 +8,9 @@ body {
     font-family: Arial, sans-serif;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 header{
     background-color: rgba(0, 0, 0, 0.6); 
     background-image: url('/images/IMG-20240401-WA0005.jpg'); 
@@ -41,6 +44,15 @@ header{
     margin: 0;
     font-size: 24px;
     color: green;
+}
+.header ul{
+    margin-top:10px;
+}
+.header li a{
+    text-decoration: none;
+    color: black;
+    margin-bottom:40px;
+
 }
 .header-content{
     top: 0px;
@@ -121,17 +133,9 @@ header{
     cursor: pointer;
     transition: color 0.3s ease;
 }
-.header ul li:last-child{
-    background-color: orange;
-    border-radius: 50px;
-    align-items: center;
-    padding: 10px;
-    justify-content: center;
-
-}
 
 /* Hover effect for menu items */
-.header ul li:hover {
+.header ul li a:hover {
     color: #3498db;
 }
 
@@ -258,15 +262,14 @@ header{
     margin: 0;
     gap: 30px;
 }
-.services p{
+#services .services-header{
     padding: 10px 0 0 80px;
-    font-size: 40px;
-
+    font-size: 30px;
 }
-.services p span{
-    color:gold
+#services p span{
+    color:rgb(234, 221, 150);
 }
-.services-container .item-service{
+ .item-service{
     width: 100%;
     padding: 30px;
     flex: 1 1 300px;
@@ -318,9 +321,123 @@ header{
     line-height: 30px;
     font-family: sans-serif;
 }
-/* Responsive design */
+.contact_section, .footer_section{
+    text-align: center;
+}
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px 50px;
+    margin: 0;
+    justify-content: center;
+    gap: 60px;
+}
+#contact .contact_taital{
+    padding: 10px 0 0 80px;
+    color: #535353;
+}
+
+.intouch {
+    width: 300px;
+}
+
+.intouch h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.intouch-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.intouch-item i {
+    margin-right: 15px;
+    font-size: 24px;
+    color: #007bff;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    margin-right: 10px;
+    font-size: 24px;
+    color: #333;
+}
+
+.contact-form {
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    width: 500px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    color: #333;
+    text-align: center;
+    font-weight: 700;
+}
+
+.form-group input,
+.form-group textarea {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    width: 100%;
+    font-size: 1em;
+    transition: border-color 0.3s ease;
+    background-color: #f9f9f9;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #007bff;
+    box-shadow: none;
+    background-color: #fff;
+}
+
+.form-group label {
+    font-size: 1.1em;
+    color: #333;
+    font-weight: bold;
+}
+
+.form-control::placeholder {
+    color: #999;
+    opacity: 1;
+}
+
+.btn-custom {
+    background-color: #007bff;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-size: 1.2em;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    border: none;
+}
+
+.btn-custom:hover {
+    background-color: #0056b3;
+}/* Responsive design */
+.copyright_section{
+    background-color: rgb(77, 77, 77);
+    padding: 15px;
+    color: white;
+}
+.copyright_section a{
+    color: gold;
+}
 @media (max-width: 768px) {
-    
 .header-content{
     top: 0;
 }
@@ -349,7 +466,9 @@ header{
         text-align: center;
         background-color: rgb(50, 50, 50);
     }
-    
+    .header ul li a{
+        color: white;
+    }
     .header ul li {
         padding: 15px 0; 
         font-size: 18px;
@@ -379,6 +498,9 @@ header{
     .container-about{
         display: inline-block;
         margin: 0;
-        padding: 30px 50px;
     }
-}
+    .btn-custom {
+        padding: 10px 10px;
+        font-size: 1.0em;
+    }
+    }

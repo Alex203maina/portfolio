@@ -9,13 +9,13 @@
 </head>
 <body>
     <header>
-        <div class="header">
+        <div class="header" id="navbar">
             <h1>Portfolio</h1>
             <ul>
                 <li>Home</li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#services"></a>Services</li>
-                <li>Contact</li>
+                <li><a href="#services">Projects</a></li>
+                <li> <a href="#contact">Contact</a></li>
                 <li>Hire ME</li>
             </ul>
             <div class="menu-icon">
@@ -25,10 +25,10 @@
         <div class="container">
             <div class="social-icons pt-3">
                 <li class="social-item"><a class="social-link text-light" href="#"><i class="fa-brands fa-facebook"></i></a></li>
-                <li class="social-item"><a class="social-link text-light" href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                <li class="social-item"><a class="social-link text-light" href="#"><i class="fa-brands fa-google"></i></a></li>
-                <li class="social-item"><a class="social-link text-light" href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                <li class="social-item"><a class="social-link text-light" href="#"><i class="fa-brands fa-github"></i></a></li>
+                <li class="social-item"><a class="social-link text-light" href="https://x.com/Alex125maina1"><i class="fa-brands fa-x-twitter"></i></a></li>
+                <li class="social-item"><a class="social-link text-light" href="https://x.com/Alex125maina1"><i class="fa-brands fa-google"></i></a></li>
+                <li class="social-item"><a class="social-link text-light" href="https://www.instagram.com/muturi01_alex/"><i class="fa-brands fa-instagram"></i></a></li>
+                <li class="social-item"><a class="social-link text-light" href="https://github.com/Alex203maina"><i class="fa-brands fa-github"></i></a></li>
                 
             </div> 
             <div class="header-content">
@@ -40,11 +40,11 @@
                         <i class="ti-printer pr-2"></i>Print Resume
                     </button>
                 </a>
-                            </div>
+            </div>
     </div>
 </header>
 
-    <section class="about">
+    <section id="about">
         <div class="container-about">
             <div class="inner-container">
                 <div class="item-title"><p>Who am I?</p></div>
@@ -71,10 +71,9 @@
                 <div class="item-info"><strong>Phone</strong> :+ (254) 798-630-435</div><br>
                 <div class="social-icons pt-3">
                     <item class="social-item"><a class="social-link text-light" href="#"><i class="fa-brands fa-facebook"></i></a></item>
-                    <item class="social-item"><a class="social-link text-light" href="#"><i class="fa-brands fa-twitter"></i></a></item>
-                    <item class="social-item"><a class="social-link text-light" href="#"><i class="fa-brands fa-google"></i></a></item>
-                    <item class="social-item"><a class="social-link text-light" href="#"><i class="fa-brands fa-instagram"></i></a></item>
-                    <item class="social-item"><a class="social-link text-light" href="#"><i class="fa-brands fa-github"></i></a></item>
+                    <item class="social-item"><a class="social-link text-light" href="ttps://x.com/Alex125maina1"><i class="fa-brands fa-twitter"></i></a></item>
+                    <item class="social-item"><a class="social-link text-light" href="https://www.instagram.com/muturi01_alex/"><i class="fa-brands fa-instagram"></i></a></item>
+                    <item class="social-item"><a class="social-link text-light" href="https://github.com/Alex203maina"><i class="fa-brands fa-github"></i></a></item>
                     
                 </div> 
             </div>
@@ -148,8 +147,8 @@
     </section>
     
     
-    <section class="services">
-        <p><span>My</span> Projects</p>
+    <section id="services">
+        <p class="services-header"><span>My</span> Projects</p>
         <div class="services-container">
             <div class="item-service">
                 <div class="item-service-image">
@@ -185,7 +184,7 @@
                 </div><br>
                 <div class="item-service-content">
                     <div class="item-service-title">
-                        <h2><a href="https://networkdesign.example.com" target="_blank">Network Design: NextGen Networks</a></h2>
+                        <h2><a href="#" target="_blank">Network Design: NextGen Networks</a></h2>
                     </div><br>
                     <div class="item-service-desc">
                         <p>Developed a comprehensive network design solution, providing optimized and scalable network infrastructure for modern businesses.</p>
@@ -195,6 +194,94 @@
             </div>
             
         </div>
+        <hr>
+    </section>
+    <section id="contact">
+        <h1 class="contact_taital">Request A Call Back</h1>
+        <div class="contact-container">
+            <div class="contact-form">
+                <h3>Send message</h3>
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name <span>*</span></label>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email <span>*</span></label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject <span>*</span></label>
+                        <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message <span>*</span></label>
+                        <textarea class="form-control" id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-custom">Send Message</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="intouch">
+                <h3>Get in touch</h3>
+                <div class="intouch-item">
+                    <i class="fas fa-phone"></i>
+                    <strong>Phone:</strong><br> + (254) 798-630-435
+                </div>
+                <div class="intouch-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p >Address : <br> Fake ST NoWhere AB Country</p>
+                </div>
+                <div class="intouch-item">
+                    <i class="fas fa-envelope"></i>
+                    <strong>Email :</strong><br> alex203maina@gmail.com
+                </div>
+
+                <div class="social-icons pt-3">
+                    <li class="social-item"><a class="social-link text-light" href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li class="social-item"><a class="social-link text-light" href="https://x.com/Alex125maina1"><i class="fa-brands fa-x-twitter"></i></a></li>
+                    <li class="social-item"><a class="social-link text-light" href="https://x.com/Alex125maina1"><i class="fa-brands fa-google"></i></a></li>
+                    <li class="social-item"><a class="social-link text-light" href="https://www.instagram.com/muturi01_alex/"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li class="social-item"><a class="social-link text-light" href="https://github.com/Alex203maina"><i class="fa-brands fa-github"></i></a></li>
+                    
+                </div>
+            </div>
+        </div>                        
+    </section>
+    <section class="id">
+        <div class="footer_section ">
+            <div class="footer-container">
+               <div class="input_btn_main">
+                  <input type="text" class="mail_text" placeholder="Enter your email" name="Enter your email">
+                  <div class="subscribe_bt"><a href="#">Subscribe</a></div>
+               </div>
+               <div class="location_main">
+                  <div class="call_text"><img src="images/call-icon.png"></div>
+                  <div class="call_text"><a href="#">Call +01 1234567890</a></div>
+                  <div class="call_text"><img src="images/mail-icon.png"></div>
+                  <div class="call_text"><a href="#">demo@gmail.com</a></div>
+               </div>
+               <div class="social_icon">
+                <div class="social-icons pt-3">
+                    <li class="social-item"><a class="social-link text-light" href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li class="social-item"><a class="social-link text-light" href="https://x.com/Alex125maina1"><i class="fa-brands fa-x-twitter"></i></a></li>
+                    <li class="social-item"><a class="social-link text-light" href="https://www.instagram.com/muturi01_alex/"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li class="social-item"><a class="social-link text-light" href="https://github.com/Alex203maina"><i class="fa-brands fa-github"></i></a></li>
+                    
+                </div>
+               </div>
+            </div>
+         </div>
+         <!-- footer section end -->
+         <!-- copyright section start -->
+         <div class="copyright_section">
+            <div class="copyright-container">
+               <p class="copyright_text">2024 All Rights Reserved. Design with ❤️😉<a href="https://github.com/Alex203maina">by muturi01_alex</a></p>
+            </div>
+         </div>
+         
     </section>
     <script>
 const menuIcon = document.querySelector('.fa-bars');
@@ -203,14 +290,20 @@ const menuList = document.querySelector('.header ul');
 menuIcon.addEventListener('click', () => {
     menuList.classList.toggle('show');
 });
-window.addEventListener('scroll', function() {
-        const header = document.querySelector('.header');
-        if (window.scrollY > 50) {
-            header.classList.add('scrolled');
-        } else {
-            header.classList.remove('scrolled');
-        }
-    });
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  const element = document.getElementById("navbar");
+
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    element.style.top = "0"; // Modify the style directly
+    element.classList.add("scrolled"); // Optionally add a class
+  } else {
+    element.style.top = "-50px"; // Reset the style
+    element.classList.remove("scrolled"); // Optionally remove a class
+  }
+}
 
     </script>
 </body>
