@@ -62,11 +62,10 @@
             <hr>
             <div class="inner-container">
                 <div class="item-title"><p>Personal Info</p></div><br>
-                <div class="item-info"><strong>Birthday</strong> :22/10/2003</div>
                 <div class="item-info"><strong>Email</strong> :alex203maina@gmail.com</div>
-                <div class="item-info"><strong>Github</strong> : https://github.com/Alex203maina</div>
-                <div class="item-info"><strong>Address</strong> :12345 Fake ST NoWhere AB Country.</div>
-                <div class="item-info"><strong>Linkedln</strong> :22/10/2003</div>
+                <div class="item-info"><strong>Github</strong> : <a href="https://github.com/Alex203maina">https://github.com/Alex203maina</a></a></div>
+                <div class="item-info"><strong>Address</strong> :Nairobi, Kenya</div>
+                <div class="item-info"><strong>Linkedln</strong> <a href="https://www.linkedin.com/in/alex-muturi-69b641250/">https://www.linkedin.com/in/alex-muturi-69b641250/</a></div>
                 <div class="item-info"><strong>Phone</strong> :+ (254) 798-630-435</div><br>
                 <div class="social-icons pt-3">
                     <item class="social-item"><a class="social-link text-light" href="#"><i class="fa-brands fa-facebook" target="_blank"></i></a></item>
@@ -93,7 +92,7 @@
             
                 <div class="item-expert">
                     <div class="item-logo">
-                        <i class="fa-brands fa-html5"  style="color: brown;"></i>
+                        <i class="fa-brands fa-html5" style="color: brown;"></i>
                     </div>
                     <div class="item-expert-dec">
                         <h4>HTML & CSS</h4>
@@ -104,16 +103,46 @@
             
                 <div class="item-expert">
                     <div class="item-logo">
-                        <i class="fa-solid fa-database"  style="color: rgb(147, 147, 147);"></i>
+                        <i class="fa-solid fa-database" style="color: rgb(147, 147, 147);"></i>
                     </div>
                     <div class="item-expert-dec">
                         <h4>Databases</h4>
                         <p>Experience with database management systems like MySQL for storing and retrieving data.</p>
                     </div>
                 </div>
-                
                 <hr>
-            </div>
+            
+                <!-- Added Node.js and JavaScript Expertise -->
+                <div class="item-expert">
+                    <div class="item-logo">
+                        <i class="fa-brands fa-node-js" style="color: green;"></i>
+                    </div>
+                    <div class="item-expert-dec">
+                        <h4>Node.js</h4>
+                        <p>Proficient in building scalable server-side applications using Node.js.</p>
+                    </div>
+                </div>
+                <hr>
+            
+                <div class="item-expert">
+                    <div class="item-logo">
+                        <i class="fa-brands fa-js" style="color: gold;"></i>
+                    </div>
+                    <div class="item-expert-dec">
+                        <h4>JavaScript</h4>
+                        <p>Skilled in creating interactive web applications with JavaScript for enhanced user experiences.</p>
+                    </div>
+                </div>
+                <hr>
+            
+                <!-- Added Python and Django Expertise -->
+                <div class="item-expert">
+                    <div class="item-logo">
+                        <i class="fa-brands fa-python" style="color: #306998;"></i>
+                    </div>
+                    <div class="item-expert-dec">
+                        <h4>Python & Django</h4>
+                        <p>Experienced in developing robust web applications using Python and the Django framework.</p>
     </section>
     <hr>
     <section class="interests-section">
@@ -200,7 +229,7 @@
         <div class="contact-container">
             <div class="contact-form">
                 <h3>Send message</h3>
-                <form action="https://formspree.io/f/xgvwjwpo" method="POST">
+                <form  action="https://formspree.io/f/xgvwjwpo" id="my-form" method="POST">
                     <div class="form-group">
                         <label for="name">Name <span>*</span></label>
                         <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
@@ -218,7 +247,8 @@
                         <textarea class="form-control" id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
                     </div>
                     <div class="text-center">
-                        <button type="submit" name="send" class="btn btn-custom">Send Message</button>
+                        <button type="submit" name="send" id="my-form-button" class="btn btn-custom">Send Message</button>
+                        <p id="my-form-status"></p>
                     </div>
                 </form>
             </div>
@@ -305,7 +335,36 @@ function scrollFunction() {
     element.classList.remove("scrolled");
   }
 }
-
+  var form = document.getElementById("my-form");
+  
+  async function handleSubmit(event) {
+    event.preventDefault();
+    var status = document.getElementById("my-form-status");
+    var data = new FormData(event.target);
+    fetch(event.target.action, {
+      method: form.method,
+      body: data,
+      headers: {
+          'Accept': 'application/json'
+      }
+    }).then(response => {
+      if (response.ok) {
+        status.innerHTML = "Thanks for your submission!";
+        form.reset()
+      } else {
+        response.json().then(data => {
+          if (Object.hasOwn(data, 'errors')) {
+            status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+          } else {
+            status.innerHTML = "Oops! There was a problem submitting your form"
+          }
+        })
+      }
+    }).catch(error => {
+      status.innerHTML = "Oops! There was a problem submitting your form"
+    });
+  }
+  form.addEventListener("submit", handleSubmit)
     </script>
 </body>
 </html>
